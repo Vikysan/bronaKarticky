@@ -1,0 +1,172 @@
+[
+  [
+    {
+      "word": "USA",
+      "translation": "USA"
+    },
+    {
+      "word": "France",
+      "translation": "Francie"
+    }
+  ],
+  [
+    {
+      "word": "Doctor",
+      "translation": "Doktor"
+    },
+    {
+      "word": "Teacher",
+      "translation": "Učitel"
+    }
+  ],
+  [
+    {
+      "word": "Sun",
+      "translation": "Slunce"
+    },
+    {
+      "word": "Rain",
+      "translation": "Déšť"
+    }
+  ],
+  [
+    {
+      "word": "Computer",
+      "translation": "Počítač"
+    },
+    {
+      "word": "Smartphone",
+      "translation": "Chytrý telefon"
+    }
+  ],
+  [
+    {
+      "word": "Football",
+      "translation": "Fotbal"
+    },
+    {
+      "word": "Basketball",
+      "translation": "Basketbal"
+    }
+  ],
+  [
+    {
+      "word": "Elephant",
+      "translation": "Slon"
+    },
+    {
+      "word": "Giraffe",
+      "translation": "Žirafa"
+    }
+  ],
+  [
+    {
+      "word": "Pizza",
+      "translation": "Pizza"
+    },
+    {
+      "word": "Pasta",
+      "translation": "Těstoviny"
+    }
+  ],
+  [
+    {
+      "word": "Summer",
+      "translation": "Léto"
+    },
+    {
+      "word": "Winter",
+      "translation": "Zima"
+    }
+  ],
+  [
+    {
+      "word": "Movie",
+      "translation": "Film"
+    },
+    {
+      "word": "Music",
+      "translation": "Hudba"
+    }
+  ],
+  [
+    {
+      "word": "Swimming",
+      "translation": "Plavání"
+    },
+    {
+      "word": "Cycling",
+      "translation": "Jízda na kole"
+    }
+  ],
+  [
+    {
+      "word": "Coffee",
+      "translation": "Káva"
+    },
+    {
+      "word": "Ice Cream",
+      "translation": "Zmrzlina"
+    }
+  ],
+  [
+    {
+      "word": "Beach",
+      "translation": "Pláž"
+    },
+    {
+      "word": "Mountains",
+      "translation": "Hory"
+    }
+  ],
+  [
+    {
+      "word": "Dolphin",
+      "translation": "Delfín"
+    },
+    {
+      "word": "Turtle",
+      "translation": "Želva"
+    }
+  ],
+  [
+    {
+      "word": "Reading",
+      "translation": "Čtení"
+    },
+    {
+      "word": "Drawing",
+      "translation": "Kreslení"
+    }
+  ],
+  [
+    {
+      "word": "Car",
+      "translation": "Auto"
+    },
+    {
+      "word": "Train",
+      "translation": "Vlak"
+    }
+  ],
+  [
+    { "word": "Book", "translation": "Kniha" },
+    { "word": "Movie", "translation": "Film" }
+  ],
+  [
+    { "word": "Coffee", "translation": "Káva" },
+    { "word": "Tea", "translation": "Čaj" }
+  ],
+  [
+    { "word": "Mountains", "translation": "Hory" },
+    { "word": "Beach", "translation": "Pláž" }
+  ],
+  [
+    { "word": "Guitar", "translation": "Kytara" },
+    { "word": "Piano", "translation": "Klavír" }
+  ],
+  [
+    { "word": "Dog", "translation": "Pes" },
+    { "word": "Cat", "translation": "Kočka" }
+  ]
+]
