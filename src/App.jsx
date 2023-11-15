@@ -51,13 +51,10 @@ export default function App() {
   }
 
   return (
-    <div className="bg-sky-300 flex  items-center h-screen justify-center flex-col">
-      <div className="container w-72">
+      <div className="grid grid-cols-1  gap-2  w-full ">
         <ModalMenu ref={modalMenuRef} gameChangeHandler={gameChangeHandler} />
         <Card type={typeOfGame} content={[deck[0], deck[1]]} />
         <Controller nextHandler={nextHandler} menuHandler={menuHandler} />
-
-      </div>
     </div>
   );
 }

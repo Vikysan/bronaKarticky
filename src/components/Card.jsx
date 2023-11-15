@@ -1,13 +1,20 @@
-
-
-
-
+const CardCover = ({ children, brightColor, darkColor, textFooter }) => {
+  return (
+    <div className="bg-white rounded-lg    shadow-2xl  p-4 w-72 mx-auto">
+      <div className={`p-2 rounded-lg ${brightColor}`}>
+      {children}
+      </div>
+      <div className={`p-2 rounded-lg mt-2 ${darkColor}`}>
+        <h3 className="text-white text-center">{textFooter}</h3>
+      </div>
+    </div>
+  )
+}
 
 const Card = ({ type, content }) => {
   if (type === "which_is_better") {
     return (
-      <div className="bg-white rounded-lg    shadow-2xl h-70 p-4">
-        <div className="bg-green-200 p-2 rounded-lg ">
+      <CardCover brightColor="bg-green-200" darkColor="bg-green-700" textFooter="Co je lepší - WHICH IS BETTER">
           <div className="divide-y divide-green-700 w-12">
             <h2 className="text-xl font-bold border-solid border-c whitespace-nowrap">{content[0][0]?.word}</h2>
             <h2 className="text-xl font-bold whitespace-nowrap">{content[0][1]?.word}</h2>
@@ -24,27 +31,19 @@ const Card = ({ type, content }) => {
             <p className="text-green-700"> {content[1][0]?.translation}</p>
             <p className="text-green-700"> {content[1][1]?.translation}</p>
           </div>
-        </div>
-
-        <div className="bg-green-700 rounded-lg p-2 mt-2">
-          <h3 className="text-white text-center">Co je lepší - WHICH IS BETTER</h3>
-        </div>
-      </div>
+      </CardCover>
     );
   }
+
+
   if (type === "true_or_false") {
     return (
-      <div className="bg-white rounded-lg shadow-2xl  h-70 p-4">
-        <div className="bg-red-100 p-2 rounded-lg">
+      <CardCover brightColor="bg-red-100" darkColor="bg-red-600" textFooter="pravda/lež - TRUE/FALSE">
           <h2 className="text-xl font-bold mb-4">{content[0].sentence}</h2>
-            <p className="text-red-600 border-solid border-s-2 border-red-600 pl-2 text-xs mb-8">{content[0].translation}</p>  
+          <p className="text-red-600 border-solid border-s-2 border-red-600 pl-2 text-xs mb-8">{content[0].translation}</p>
           <h2 className="text-xl font-bold mb-4">{content[1].sentence}</h2>
-          <p className="text-red-600 border-solid border-s-2 border-red-600 pl-2 text-xs mb-8">{content[1].translation}</p>
-        </div>
-        <div className="bg-red-600 rounded-lg p-2 mt-2">
-          <h3 className="text-white text-center">pravda/lež - TRUE/FALSE</h3>
-        </div>
-      </div>
+          <p className="text-red-600 border-solid border-s-2 border-red-600 pl-2 text-xs mb-8">{content[1].translation}</p> 
+      </CardCover>
     );
   }
   return ""
