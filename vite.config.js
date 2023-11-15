@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
   }
 
   if (command !== 'serve') {
-    config.base = '/bronaKarticky/'
+    config.base = '/bronakarticky/'
   }
 
   return config
