@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, ref, useRef } from 'react'
+import { forwardRef, useImperativeHandle, useRef } from 'react'
 import Button from './UI/Button'
 import Dot from './UI/Dot'
 

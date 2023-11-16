@@ -1,6 +1,6 @@
 const CardCover = ({ children, brightColor, darkColor, textFooter }) => {
   return (
-    <div className="bg-white rounded-lg    shadow-2xl  p-4 w-72 mx-auto">
+    <div className="bg-white rounded-lg    shadow-2xl  p-4 sm:w-72  mx-auto w-full">
       <div className={`p-2 rounded-lg ${brightColor}`}>
       {children}
       </div>

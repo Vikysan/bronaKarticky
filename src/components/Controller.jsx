@@ -19,7 +19,7 @@ let btnColor
       break;
   }
   return (
-    <div className="grid grid-cols-2  w-72 mx-auto gap-1">
+    <div className="grid grid-cols-2  sm:w-72 w-full mx-auto gap-1">
       <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}><TbBaselineDensitySmall className="w-full h-8 p-1" /></Button>
       <Button onClick={nextHandler} className={`${btnColor}  rounded-lg text-white`}><TbArrowBigRightFilled className="w-full h-8"/></Button>
     </div>
