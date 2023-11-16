@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Handjet:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
     box-sizing: border-box;
+    user-select: none;
   }
 
 body{
@@ -11,3 +13,10 @@ body{
     background-color: rgb(125 211 252 / var(--tw-bg-opacity));
 }
 
+h2{
+  user-select: text;
+}
+
+p{
+  user-select: text;
+}
