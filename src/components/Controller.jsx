@@ -1,4 +1,6 @@
 import Button from "./UI/Button"
+import { TbArrowBigRightFilled,TbBaselineDensitySmall  } from "react-icons/tb";
+
 
 const Controller = ({nextHandler,menuHandler,typeOfGame}) => {
 let btnColor
@@ -17,9 +19,9 @@ let btnColor
       break;
   }
   return (
-    <div className="grid grid-cols-2 h-10 w-72 mx-auto gap-1">
-      <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}>Menu</Button>
-      <Button onClick={nextHandler} className={`${btnColor}  rounded-lg text-white`}>Next</Button>
+    <div className="grid grid-cols-2  w-72 mx-auto gap-1">
+      <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}><TbBaselineDensitySmall className="w-full h-8 p-1" /></Button>
+      <Button onClick={nextHandler} className={`${btnColor}  rounded-lg text-white`}><TbArrowBigRightFilled className="w-full h-8"/></Button>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { forwardRef, useImperativeHandle, ref, useRef } from 'react'
 import Button from './UI/Button'
 import Dot from './UI/Dot'
 
+
 const ModalMenu = forwardRef(function ModalMenu({ gameChangeHandler }, ref) {
   const dialog = useRef()
   useImperativeHandle(ref, () => {
