@@ -46,6 +46,17 @@ const Card = ({ type, content }) => {
       </CardCover>
     );
   }
+
+  if (type === "questions") {
+    return (
+      <CardCover brightColor="bg-pink-100" darkColor="bg-pink-950" textFooter="otázky - QUESTIONS">
+          <h2 className="text-xl font-bold mb-4">{content[0].sentence}</h2>
+          <p className="text-pink-950 border-solid border-s-2 border-pink-950 pl-2 text-xs mb-8">{content[0].translation}</p>
+          <h2 className="text-xl font-bold mb-4">{content[1].sentence}</h2>
+          <p className="text-red-950 border-solid border-s-2 border-pink-950 pl-2 text-xs mb-8">{content[1].translation}</p> 
+      </CardCover>
+    );
+  }
   return ""
 };
 
