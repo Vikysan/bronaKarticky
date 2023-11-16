@@ -16,14 +16,14 @@ const ModalMenu = forwardRef(function ModalMenu({ gameChangeHandler }, ref) {
     }
   })
   return (
-    <dialog ref={dialog} className='w-80 backdrop:bg-sky-300  rounded-xl  bg-stone-900'>
+    <dialog ref={dialog} className='w-80 backdrop:bg-sky-300  rounded-xl  bg-stone-900 p-8'>
       <h2 className='text-center font-extrabold mb-4 tracking-widest text-white text-4xl' style={{ fontFamily: 'Handjet' }}>Vyber hru</h2>
-      <ul className='px-4'>
-        <li><Button  onClick={() => gameChangeHandler("true_or_false")} className="text-stone-400 text-2xl text-left"><Dot className="bg-red-600 " />True or False</Button></li>
-        <li><Button onClick={() => gameChangeHandler("which_is_better")} className="text-stone-400 text-2xl text-left"><Dot className="bg-green-600 " />Which is better</Button></li>
+      <div className=' grid grid-cols-1 gap-4'>
+        <Button  onClick={() => gameChangeHandler("true_or_false")} className="text-stone-400 text-2xl text-left"><Dot className="bg-red-600 " />True or False</Button>
+        <Button onClick={() => gameChangeHandler("which_is_better")} className="text-stone-400 text-2xl text-left"><Dot className="bg-green-600 " />Which is better</Button>
 
-        <li><Button onClick={() => gameChangeHandler("questions")} className="text-stone-400 text-2xl text-left"><Dot className="bg-pink-950 " />Questions</Button></li>
-      </ul>
+        <Button onClick={() => gameChangeHandler("questions")} className="text-stone-400 text-2xl text-left"><Dot className="bg-pink-950 " />Questions</Button>
+      </div>
       {/* <form method="dialog">
         <button className='text-right'>Close</button></form> */}
     </dialog>
