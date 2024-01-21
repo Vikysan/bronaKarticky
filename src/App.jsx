@@ -5,9 +5,11 @@ import trueOrFalse from "./store/trueOrFalse.json"
 import questions from "./store/questions.json"
 import Controller from "./components/Controller";
 import ModalMenu from "./components/ModalMenu";
+import Help from "./components/Help";
 
 export default function App() {
   const modalMenuRef = useRef()
+  const modalHelpRef = useRef()
 
   const [deck, setDeck] = useState(whichIsBetter);
   const [starterDeck, setStarterDeck] = useState(whichIsBetter)
@@ -56,6 +58,7 @@ export default function App() {
   return (
       <div className="flex flex-col space-y-1 w-screen justify-center items-center bg-[#7dd3fc] min-h-screen ">
         <ModalMenu ref={modalMenuRef} gameChangeHandler={gameChangeHandler} />
+        <Help  ref={modalHelpRef}/>
         <div className="min-w-[20rem] max-w-[25rem] space-y-1">
 
         <Card type={typeOfGame} content={[deck[0], deck[1]]} />
