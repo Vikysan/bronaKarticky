@@ -19,9 +19,9 @@ let btnColor
       break;
   }
   return (
-    <div className="flex  space-x-1   min-w-[20rem] max-w-[25rem]">
-      <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}><TbBaselineDensitySmall className="w-full h-8" /></Button>
-      <Button onClick={nextHandler} className={`${btnColor}  rounded-lg text-white`}><TbArrowBigRightFilled className="w-full h-8"/></Button>
+    <div className="flex  space-x-1 w-full">
+      <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}><TbBaselineDensitySmall className="w-full h-10" /></Button>
+      <Button onClick={nextHandler} className={`${btnColor}  rounded-lg text-white`}><TbArrowBigRightFilled className="w-full h-10"/></Button>
     </div>
   )
 }

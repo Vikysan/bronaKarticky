@@ -56,8 +56,11 @@ export default function App() {
   return (
       <div className="flex flex-col space-y-1 w-screen justify-center items-center bg-[#7dd3fc] min-h-screen ">
         <ModalMenu ref={modalMenuRef} gameChangeHandler={gameChangeHandler} />
+        <div className="min-w-[20rem] max-w-[25rem] space-y-1">
+
         <Card type={typeOfGame} content={[deck[0], deck[1]]} />
         <Controller nextHandler={nextHandler} menuHandler={menuHandler} typeOfGame={typeOfGame} />
+        </div>
     </div>
   );
 }
