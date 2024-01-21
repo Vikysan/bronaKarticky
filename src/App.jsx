@@ -36,6 +36,10 @@ export default function App() {
     modalMenuRef.current.open()
   }
 
+  const openHelpHandler =()=>{
+    // console.log("jo")
+    modalHelpRef.current.open()
+  }
   const gameChangeHandler = (newTypeOfGame) => {
     setTypeOfGame(newTypeOfGame);
     switch (newTypeOfGame) {
@@ -61,8 +65,8 @@ export default function App() {
         <Help  ref={modalHelpRef}/>
         <div className="min-w-[20rem] max-w-[25rem] space-y-1">
 
-        <Card type={typeOfGame} content={[deck[0], deck[1]]} />
-        <Controller nextHandler={nextHandler} menuHandler={menuHandler} typeOfGame={typeOfGame} />
+        <Card type={typeOfGame} content={[deck[0], deck[1]]} openHelpHandler={openHelpHandler}/>
+        <Controller nextHandler={nextHandler} menuHandler={menuHandler} typeOfGame={typeOfGame}/>
         </div>
     </div>
   );

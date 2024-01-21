@@ -1,20 +1,22 @@
-const CardCover = ({ children, brightColor, darkColor, textFooter }) => {
+const CardCover = ({ children, brightColor, darkColor, textFooter,openHelpHandler }) => {
   return (
     <div className="bg-white rounded-lg    shadow-2xl  p-4 ">
       <div className={`p-2 rounded-lg ${brightColor} h-[34rem] px-5 pt-5`}>
       {children}
       </div>
       <div className={`p-2 rounded-lg mt-2 ${darkColor}`}>
+        <button onClick={openHelpHandler}>
         <h3 className="text-white text-center">{textFooter}</h3>
+        </button>
       </div>
     </div>
   )
 }
   
-const Card = ({ type, content }) => {
+const Card = ({ type, content ,openHelpHandler}) => {
   if (type === "which_is_better") {
     return (
-      <CardCover brightColor="bg-green-200" darkColor="bg-green-700" textFooter="Co je lepší - WHICH IS BETTER">
+      <CardCover brightColor="bg-green-200" darkColor="bg-green-700" textFooter="Co je lepší - WHICH IS BETTER" openHelpHandler={openHelpHandler}>
           <div className="divide-y divide-green-700 w-12">
             <h2 className="text-2xl font-bold border-solid border-c whitespace-nowrap ">{content[0][0]?.word}</h2>
             <h2 className="text-2xl font-bold whitespace-nowrap">{content[0][1]?.word}</h2>
