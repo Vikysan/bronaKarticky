@@ -1,7 +1,7 @@
 const CardCover = ({ children, brightColor, darkColor, textFooter }) => {
   return (
-    <div className="bg-white rounded-lg    shadow-2xl  p-4 sm:w-72  mx-auto w-full">
-      <div className={`p-2 rounded-lg ${brightColor}`}>
+    <div className="bg-white rounded-lg    shadow-2xl  p-4 min-w-[20rem] max-w-[25rem] ">
+      <div className={`p-2 rounded-lg ${brightColor} h-[34rem] px-5 pt-5`}>
       {children}
       </div>
       <div className={`p-2 rounded-lg mt-2 ${darkColor}`}>
@@ -10,24 +10,24 @@ const CardCover = ({ children, brightColor, darkColor, textFooter }) => {
     </div>
   )
 }
-
+  
 const Card = ({ type, content }) => {
   if (type === "which_is_better") {
     return (
       <CardCover brightColor="bg-green-200" darkColor="bg-green-700" textFooter="Co je lepší - WHICH IS BETTER">
           <div className="divide-y divide-green-700 w-12">
-            <h2 className="text-xl font-bold border-solid border-c whitespace-nowrap">{content[0][0]?.word}</h2>
-            <h2 className="text-xl font-bold whitespace-nowrap">{content[0][1]?.word}</h2>
+            <h2 className="text-2xl font-bold border-solid border-c whitespace-nowrap ">{content[0][0]?.word}</h2>
+            <h2 className="text-2xl font-bold whitespace-nowrap">{content[0][1]?.word}</h2>
           </div>
-          <div className="border-s-2 border-green-700 px-1 mb-10 text-xs">
+          <div className="border-s-2 border-green-700 px-1  text-xs mb-3 w-[18rem]">
             <p className="text-green-700"> {content[0][0]?.translation}</p>
             <p className="text-green-700"> {content[0][1]?.translation}</p>
           </div>
           <div className="divide-y divide-green-700 w-12">
-            <h2 className="text-xl font-bold border-solid border-c whitespace-nowrap">{content[1][0]?.word}</h2>
-            <h2 className="text-xl font-bold whitespace-nowrap">{content[1][1]?.word}</h2>
+            <h2 className="text-2xl font-bold border-solid border-c whitespace-nowrap">{content[1][0]?.word}</h2>
+            <h2 className="text-2xl font-bold whitespace-nowrap">{content[1][1]?.word}</h2>
           </div>
-          <div className="border-s-2 border-green-700 px-1 mb-20 text-xs">
+          <div className="border-s-2 border-green-700 px-1  text-xs">
             <p className="text-green-700"> {content[1][0]?.translation}</p>
             <p className="text-green-700"> {content[1][1]?.translation}</p>
           </div>

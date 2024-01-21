@@ -46,7 +46,7 @@ export default function App() {
         case "questions":
           setStarterDeck(questions);
           break;
-      default:
+      default: 
 
         break;
     }
@@ -54,7 +54,7 @@ export default function App() {
   }
 
   return (
-      <div className="grid grid-cols-1  gap-2  w-full ">
+      <div className="flex flex-col space-y-1 w-screen justify-center items-center bg-[#7dd3fc] min-h-screen ">
         <ModalMenu ref={modalMenuRef} gameChangeHandler={gameChangeHandler} />
         <Card type={typeOfGame} content={[deck[0], deck[1]]} />
         <Controller nextHandler={nextHandler} menuHandler={menuHandler} typeOfGame={typeOfGame} />

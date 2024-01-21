@@ -19,11 +19,12 @@ let btnColor
       break;
   }
   return (
-    <div className="grid grid-cols-2  sm:w-72 w-full mx-auto gap-1">
-      <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}><TbBaselineDensitySmall className="w-full h-8 p-1" /></Button>
+    <div className="flex  space-x-1   min-w-[20rem] max-w-[25rem]">
+      <Button onClick={menuHandler} className={`${btnColor}  rounded-lg text-white`}><TbBaselineDensitySmall className="w-full h-8" /></Button>
       <Button onClick={nextHandler} className={`${btnColor}  rounded-lg text-white`}><TbArrowBigRightFilled className="w-full h-8"/></Button>
     </div>
   )
 }
 
 export default Controller
+ 

@@ -8,10 +8,6 @@
     user-select: none;
   }
 
-body{
-    --tw-bg-opacity: 1;
-    background-color: rgb(125 211 252 / var(--tw-bg-opacity));
-}
 
 h2{
   user-select: text;
